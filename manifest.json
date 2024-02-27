@@ -1,0 +1,10 @@
+﻿{
+    "name": "资源1",
+    "description": "",
+    "thumbnail": "img/bg.jpg",
+    "type": "html",
+    "start": "index.html?screen=1",
+    "page": 0,
+    "localpath": "/kbdt/",
+    "version": ""
+}

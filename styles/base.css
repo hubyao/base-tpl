@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/*reset*/
+
+body,
+html {
+    padding: 0;
+    margin: 0 auto;
+}
+
+img {
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+blockquote,
+form,
+ul,
+ol,
+li,
+p,
+pre,
+dl,
+dt,
+dd,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset {
+    border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    line-height: 22px;
+    line-height: 18px;
+    padding: 2px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+
+/*滚动条样式*/
+
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+::-webkit-scrollbar-track {
+    background-color: inherit;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E6E6E6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.main {
+    width: 1080px;
+    height: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.ellipsis2 {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 23px;
+}
+
+.back-button {
+    position: absolute;
+    right: -30px;
+    top: 80%;
+    text-align: center;
+}
+
+.back-button img {
+    width: 200px;
+}
+
+.main-wrapper {
+    overflow: hidden;
+}
+
+#toastTip {
+    display: none;
+    position: fixed;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1px 16px;
+    min-width: 18%;
+    max-width: 80%;
+    /* 这里最大宽度可能不生效，内容过多展示宽度50%会折行 */
+    line-height: 40px;
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 1px;
+    z-index: 100;
+}
