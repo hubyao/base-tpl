@@ -1,4 +1,5 @@
 # base-tpl
+用于 html 项目基础模板
 component: 组件
 
 ```
